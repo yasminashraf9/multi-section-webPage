@@ -1,0 +1,236 @@
+*,::after,::before{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --gray-color: #c1c1c1;
+    --pink-color: #fa65b1;
+    --blue-color: #726ae3;
+    --orange-color:#f58c56;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+hr{
+    width: 50px;
+    border: 1px solid var(--blue-color);
+    opacity: 120%;
+}
+.blue-heading{
+    color: var(--blue-color)
+}
+.pink-heading{
+    color: var(--pink-color);
+}
+.prg{
+    color: var(--gray-color);
+    line-height: 2rem;
+}
+.bold{
+    font-weight: bold;
+}
+.round{
+    border-radius: 25px ;
+}
+.animate__animated{
+    animation-duration: 1.8s;
+}
+.moving{
+    width: 50%;
+}
+/**************************************** header section  *****************************************/
+header section {
+    background-color: #efefef;
+}
+header section .d-flex div:first-child a{
+    color: var(--gray-color) ;
+}
+header section .d-flex div:first-child a:hover{
+    color: var(--pink-color);
+    transition: all .1s;
+}
+header section .d-flex div:nth-child(2) a{
+    color: white;
+    background-color: var(--gray-color);
+    border-radius: 50% ;
+    padding: 9px;
+}
+
+header section .d-flex div:nth-child(2) a:hover{
+    background-color: var(--pink-color);
+    transition: all .15s;
+}
+/******** nav part *********/
+.navbar-brand {
+    color: var(--pink-color) !important;
+    font-size: xx-large;
+}
+.navbar-brand span:first-child{
+    color: var(--blue-color);
+}
+.navbar-brand span:nth-child(2){
+    color: var(--orange-color);
+}
+
+.navbar-nav a{
+    padding: 0 30px !important;
+    color: black !important;
+}
+.navbar-nav a:hover{
+    color: var(--pink-color) !important;
+}
+#navbarNav button, #home div button, #blog button , #contact button{
+    border: 1px solid var(--pink-color);
+    color: var(--pink-color);
+    border-radius: 25px;    
+}
+#navbarNav button:hover, #home div button:hover , #blog button:hover, #contact button:hover{
+    background-color: var(--pink-color);
+    color: white;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+/******************* home section  **********************/
+#home, #about, #service, #project, #bolg, #contact{
+    padding: 7% 0;
+}
+#home div h5 {
+    color: var(--pink-color);
+    font-weight:bolder;
+    padding-top: 5rem;
+}
+
+/******************* about section  **********************/
+#about div h6 {
+    color: var(--blue-color);
+    font-weight:bolder;
+    padding-top: 6rem;
+}
+#about div img{
+    width: 550px;
+}
+#about div h1 , #service h1{
+    margin: 20px 0;
+}
+
+/***************************************** services section  ***********************************/
+
+#option-show{
+    padding: 100px 70px;
+}
+
+/***************************************** Quotes section  ***********************************/
+
+#quote{
+    color: white ;
+    background-image: linear-gradient(to right, #ae86cd, #cf84bc);
+}
+#quote hr{
+    border: 1px solid white;
+}
+#quote #input{
+    background-color: white;
+    width: fit-content;
+    border-radius: 40px;
+
+}
+#quote #input div{
+    padding: 28px 60px;
+}
+#quote #input input{
+    border: none;
+    border-bottom: 1px solid var(--gray-color);
+    background-color: transparent;
+    width: 40%;
+}
+#quote #input input:focus{
+    outline: none;
+}
+#quote #input button{
+    border: none;
+    background-color: var(--blue-color);
+    border-top-right-radius: 40px ;
+    border-bottom-right-radius: 40px;
+    color: white;
+    padding: 28px 40px;
+}
+/************************************************projects section********************************************/
+/* in its own stylesheet carsoulTicker  */
+
+
+/*********************************************** blog section **********************************************/
+.seoSpan{
+    color: white;
+    background-color: #726ae3;
+}
+#blog .card:first-child img{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+#blog .card-title{
+    font-weight: 800;
+    margin: 25px 0;
+}
+#blog div:nth-child(2) .card{
+    border: none;
+}
+/****************************************contact section********************************************/
+#contact{
+    position: relative;
+}
+#contact #hand{
+    position: absolute;
+    right: 0;
+    top: -38px;
+}
+#contact div img{
+    margin-left: -12px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+#contact a{
+    color: rgba(0, 0, 0, 0.767);
+}
+#contact a:hover{
+    color: var(--pink-color);
+    transition: all .2s;
+}
+#contact input{
+    border: 1px solid var(--gray-color);
+    padding: 10px;
+    opacity: 50%;
+    width: 280px;
+}
+#contact textarea{
+    border: 1px solid var(--gray-color);
+    opacity: 50%;
+    padding: 20px;
+}
+#contact button{
+    padding: 10px 25%;
+    margin-left: 12%;
+}
+/************************************************footer**************************************/
+footer {
+    color: white ;
+    background-image: linear-gradient(to right, #ae86cd, #cf84bc);
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: blue;
+    transition: all .6s;
+
+}

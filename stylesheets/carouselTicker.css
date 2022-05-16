@@ -1,0 +1,84 @@
+
+.inner {
+  position: relative;
+  margin: 0 auto;
+}
+
+#content-wrapper {
+  padding-top: 30px;
+  border-top: solid 1px #fff;
+}
+
+#main-content img {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* MISC */
+.clearfix:after {
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  content: '.';
+}
+
+.clearfix {display: inline-block;}
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+
+/* #Media Queries
+================================================== */
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .inner {
+    width: 740px;
+  }
+  
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  .inner {
+    width: 93%;
+  }
+}
+
+
+.carouselTicker__list {
+  margin: 10px 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.carouselTicker__item {
+  margin: 0 0 0 5px;
+  float: left;
+  line-height: 60px;
+  text-align: center;
+}
+
+.carouselTicker__loader {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #fff url("../images/loader.gif") center center no-repeat;
+}
+
+
+
+#carouselTicker .carouselTicker__item,
+#carouselTicker-destructor-example .carouselTicker__item,
+#carouselTicker-buttons-controls-example .carouselTicker__item {
+  width: auto;
+  height: auto;
+  line-height: normal;
+}
+
+.carouselTicker__item img {
+  vertical-align: top;
+}
