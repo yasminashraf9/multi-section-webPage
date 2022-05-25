@@ -111,17 +111,15 @@ header section .d-flex div:nth-child(2) a:hover{
     padding-top: 5rem;
 }
 
-/******************* about section  **********************/
-#about div h6 {
-    color: var(--blue-color);
-    font-weight:bolder;
-    padding-top: 6rem;
-}
+/********************************* about section  ******************************/
 #about div img{
     width: 550px;
 }
 #about div h1 , #service h1{
     margin: 20px 0;
+}
+#about div:last-child{
+    margin: 50px 0;
 }
 
 /***************************************** services section  ***********************************/
